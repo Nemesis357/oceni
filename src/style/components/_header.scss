@@ -1,0 +1,23 @@
+.header {
+    border-bottom: 1px solid $color-text;
+    padding: 0.5rem;
+    &-nav {
+        text-transform: uppercase;
+        color: $color-text;
+        text-decoration: none;
+        margin-right: 1rem;
+        font-weight: bold;
+
+        &:hover {
+            color: lighten($color-text, 30);
+        }
+
+        &-active {
+            color: lighten($color-text, 30);
+        }
+
+        &-wrapper {
+            text-align: right;
+        }
+    }
+}
