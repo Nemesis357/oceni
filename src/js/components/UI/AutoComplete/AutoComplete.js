@@ -15,14 +15,14 @@ class AutoComplete extends Component {
     handleSearch = (e) => {
         if ( e.target.value !== "" ) {
             axios.post('http://localhost:8000/api/cityAutocomplete', {search: e.target.value})
-                    .then( res => {
-                        this.setState({
-                            cities: res.data
-                        })
+                .then( res => {
+                    this.setState({
+                        cities: res.data
                     })
-                    .catch( res => {
-                        console.log('%c [FAIL] ', 'color:#bada55;', res);
-                    })
+                })
+                .catch( res => {
+                    console.log('%c [FAIL] ', 'color:#bada55;', res);
+                })
         } else {
             this.setState({
                 cities: []

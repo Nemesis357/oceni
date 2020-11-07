@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
-import AutoComplete from '../../components/UI/AutoComplete/AutoComplete';
+//Components
+import MainMenu from '../../components/MainMenu/MainMenu';
 
 class Home extends Component {
 
@@ -16,7 +17,7 @@ class Home extends Component {
         return (
             <div>
                 <p>Hello from Home component </p>
-                <AutoComplete />
+                <MainMenu />
             </div>
         )
     }
