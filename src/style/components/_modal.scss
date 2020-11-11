@@ -1,0 +1,18 @@
+.Modal {
+    position: fixed;
+    z-index: 500;
+    background-color: $color-white;
+    width: 70%;
+    border: 1px solid $color-black;
+    box-shadow: 1px 1px 0 0 $color-black;
+    padding: 16px;
+    transition: all 0.3s ease-in-out;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100vh);
+
+    &.active {
+        transform: translate(-50%, -50%);
+    }
+}

@@ -15,3 +15,10 @@ export const changeTestType = (payload) => {
         }, 2000)
     }
 }
+// CONFIG UPDATE
+
+
+// return {
+//     type: actionTypes.UPDATE_APP_CONFIG,
+//     payload
+// }
